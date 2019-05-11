@@ -1,11 +1,13 @@
-# Django Vue Template ✌️ 🐍
+# Django Vue Template
 
 ![Vue Logo](/src/assets/logo-vue.png "Vue Logo")
 ![Django Logo](/src/assets/logo-django.png "Django Logo")
 
+Note: This is a fork of [gtalarico/django-vue-template])(https://github.com/gtalarico/django-vue-template) that uses npm instead of Yarn.
+
 This template is a minimal example for an application using Vue and Django.
 
-It's setup to have a clear separation: use Vue, Yarn, and Webpack to handle all frontend logic and assets bundling,
+It's setup to have a clear separation: use Vue, npm, and Webpack to handle all frontend logic and assets bundling,
 and use Django with Django REST framework to manage a Data Models, Web API, and serve static files.
 
 While it's possible to add endpoints to serve django-rendered html responses, the intention is to use Django primarily for the backend, and have view rendering and routing and handled by Vue + Vue Router as a Single Page Application (SPA).
@@ -58,7 +60,7 @@ Prefer Flask? Checkout my [gtalarico/flask-vuejs-template](https://github.com/gt
 
 Before getting started you should have the following installed and running:
 
-- [X] Yarn - [instructions](https://yarnpkg.com/en/docs/install)
+- [X] npm - [instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - [X] Vue CLI 3 - [instructions](https://cli.vuejs.org/guide/installation.html)
 - [X] Python 3 - [instructions](https://wiki.python.org/moin/BeginnersGuide)
 - [X] Pipenv - [instructions](https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv)
@@ -66,13 +68,13 @@ Before getting started you should have the following installed and running:
 ## Setup Template
 
 ```
-$ git clone https://github.com/gtalarico/django-vue-template
+$ git clone https://github.com/mtb3/django-vue-template
 $ cd django-vue-template
 ```
 
 Setup
 ```
-$ yarn install
+$ npm install
 $ pipenv install --dev && pipenv shell
 $ python manage.py migrate
 ```
@@ -86,7 +88,7 @@ $ python manage.py runserver
 From another tab in the same directory:
 
 ```
-$ yarn serve
+$ npm run serve
 ```
 
 The Vue application will be served from [`localhost:8080`](http://localhost:8080/) and the Django API
@@ -102,7 +104,7 @@ development server only on `:8000`, but you have to build build the Vue app firs
 and the page will not reload on changes.
 
 ```
-$ yarn build
+$ npm run build
 $ python manage.py runserver
 ```
 
@@ -126,7 +128,7 @@ $ git push heroku
 ```
 
 Heroku's nodejs buildpack will handle install for all the dependencies from the [`package.json`](/package.json) file.
-It will then trigger the `postinstall` command which calls `yarn build`.
+It will then trigger the `postinstall` command which calls `npm run build`.
 This will create the bundled `dist` folder which will be served by whitenoise.
 
 The python buildpack will detect the [`Pipfile`](/Pipfile) and install all the python dependencies.

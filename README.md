@@ -3,7 +3,7 @@
 ![Vue Logo](/src/assets/logo-vue.png "Vue Logo")
 ![Django Logo](/src/assets/logo-django.png "Django Logo")
 
-Note: This is a fork of [gtalarico/django-vue-template])(https://github.com/gtalarico/django-vue-template) that uses npm instead of Yarn.
+Note: This is a fork of [gtalarico/django-vue-template](https://github.com/gtalarico/django-vue-template) that uses npm instead of Yarn.
 
 This template is a minimal example for an application using Vue and Django.
 
@@ -22,10 +22,11 @@ original state, except where a different configuration is needed for better inte
 
 If this setup is not what you are looking for, you might want look at other similar projects:
 
+* [gtalarico/django-vue-template](https://github.com/gtalarico/django-vue-template)
 * [ariera/django-vue-template](https://github.com/ariera/django-vue-template)
 * [vchaptsev/cookiecutter-django-vue](https://github.com/vchaptsev/cookiecutter-django-vue)
 
-Prefer Flask? Checkout my [gtalarico/flask-vuejs-template](https://github.com/gtalarico/flask-vuejs-template)
+Prefer Flask? Check out [gtalarico/flask-vuejs-template](https://github.com/gtalarico/flask-vuejs-template)
 
 ### Demo
 
